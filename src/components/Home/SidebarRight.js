@@ -17,8 +17,11 @@ const SidebarRight = () => {
     <>
       <aside className='sidebarRight'>
         <img src={insignia} alt='' onClick={() => handleModal('INSIGNIAS')}/>
+        <p>INSIGNIAS</p>
         <img src={premios} alt='' onClick={() => handleModal('PREMIOS')}/>
+        <p>PREMIOS</p>
         <img src={muro} alt='' onClick={() => handleModal('MURO')}/>
+        <p>MURO</p>
       </aside>
       {
         modal ? <ModalRight titulo={titulo} setmodal={setmodal} /> : ''

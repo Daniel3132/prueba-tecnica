@@ -1,37 +1,34 @@
-:root{
-    --azul : #4F9C9E;
-    --verde : #99C69F;
-    --piel : #F0D4A2;
+:root {
+    --azul: #4F9C9E;
+    --verde: #99C69F;
+    --piel: #F0D4A2;
+    --azulOscuro: #24249b;
 }
 
-body{
+body {
     margin: 0;
     font-weight: 400;
 }
 
-li{
-    list-style: none;
-}
-
-.link{
+.link {
     color: var(--azul);
     text-decoration: underline;
 }
 
+ul {
+    margin: 0 auto 1rem auto;
+    width: fit-content;
+}
+
 .link,
 button,
-img{
+img {
     cursor: pointer;
 }
 
-button{
+button {
     border: none;
     padding: 8px;
     border-radius: 5px;
     background-color: var(--verde);
 }
-
-/* div,
-section{
-    border: 1px solid red;
-} */

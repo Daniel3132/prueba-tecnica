@@ -117,9 +117,17 @@
         width: 100vw;
         padding: 0;
     }
-
-    .progreso{
-        margin-left: 1rem;
+    .vidCont{
+        margin: 0;
     }
+    .main{
+        flex-direction: column-reverse;   
+    }
+    /* .progreso{
+        transform: rotate(-90deg) translate(90%) translatey(-1.5rem);
+    }
+    .bolitaVideo{
+        transform: rotate(90deg);
+    } */
 
 }

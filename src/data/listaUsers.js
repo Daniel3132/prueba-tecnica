@@ -1,0 +1,1 @@
+export const usuarios = ['pedro','carlos','juan', 'miguel', 'lucas']

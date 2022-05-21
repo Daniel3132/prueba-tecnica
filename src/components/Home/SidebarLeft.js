@@ -9,19 +9,19 @@ const SidebarLeft = () => {
     <aside className='sidebarLeft'>
       <div className='redesCont'>
         <a href="http:" target="_blank" rel="noopener noreferrer">
-          <img src={campana} alt="" srcset="" />
+          <img src={campana} alt="" />
         </a>
         <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
-          <img src={facebook} alt="" srcset="" />
+          <img src={facebook} alt="" />
         </a>
         <a href="http://twitter.com" target="_blank" rel="noopener noreferrer">
-          <img src={twitter} alt="" srcset="" />
+          <img src={twitter} alt="" />
         </a>
         <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
-          <img src={instagram} alt="" srcset="" />
+          <img src={instagram} alt="" />
         </a>
       </div>
-      <h3 className='pais'>Colombia</h3>
+      <h5 className='pais'>Colombia</h5>
     </aside>
   )
 }
