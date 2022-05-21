@@ -1,0 +1,21 @@
+.sidebarRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: green;
+    width: 9vw;
+}
+
+.modalsideRight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: brown;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+
+}

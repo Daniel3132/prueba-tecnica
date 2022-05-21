@@ -2,7 +2,10 @@ import React from 'react'
 
 const Content = () => {
   return (
-    <div>Content</div>
+    <section className='content'>
+      Content
+
+    </section>
   )
 }
 
