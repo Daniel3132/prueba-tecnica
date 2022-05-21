@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import ModalRight from './ModalRight'
+import insignia from '../../assets/SVG/insignia.svg'
+import premios from '../../assets/SVG/premios.svg'
+import muro from '../../assets/SVG/muro.svg'
 
 const SidebarRight = () => {
   const [modal, setmodal] = useState(false)
@@ -13,9 +16,9 @@ const SidebarRight = () => {
   return (
     <>
       <aside className='sidebarRight'>
-        <li onClick={() => handleModal('INSIGNIAS')}>INSIGNIAS</li>
-        <li onClick={() => handleModal('PREMIOS')}>PREMIOS</li>
-        <li onClick={() => handleModal('MURO')}>MURO</li>
+        <img src={insignia} alt='' onClick={() => handleModal('INSIGNIAS')}/>
+        <img src={premios} alt='' onClick={() => handleModal('PREMIOS')}/>
+        <img src={muro} alt='' onClick={() => handleModal('MURO')}/>
       </aside>
       {
         modal ? <ModalRight titulo={titulo} setmodal={setmodal} /> : ''
