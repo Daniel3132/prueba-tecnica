@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { usuarios } from '../../data/listaUsers'
 import { contentContext } from '../../hooks/useContext'
-
+import Carousel from './Carousel'
 
 const Content = () => {
 
@@ -17,18 +17,12 @@ const Content = () => {
               <h1 onClick={() => setmodal(true)} >German Lopez</h1>
               <h6>Enfermero</h6>
             </header>
-
             <div>
               <h6>ENTRENAMIENTOS</h6>
             </div>
-            <article className='carrousel'>
-              <div>
-                <h2>ADEMPAS</h2>
-                <small>Cardiopulmonar</small>
-              </div>
-              <div className="ovalo"></div>
-              <button>SIGUIENTE</button>
-            </article>
+
+            <Carousel />
+
             {
               modal ?
                 <section className='modalsideRight'>
@@ -48,7 +42,7 @@ const Content = () => {
               <button onClick={() => setContext('doctor')}>Volver</button>
               <h1>No hay datos disponibles</h1>
             </section>
-             :
+            :
             <section className='content'>
               <button onClick={() => setContext('doctor')}>Volver</button>
               <h1>{context}</h1>

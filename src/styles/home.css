@@ -1,6 +1,7 @@
-#home{
+#home {
     color: var(--azulOscuro);
 }
+
 .navbar {
     width: 70vw;
     margin: 2rem auto;
@@ -27,15 +28,17 @@
     border: none;
 }
 
-.perfilCont .avatar{
+.perfilCont .avatar {
     width: 2rem;
     height: 2rem;
     padding: 0;
     background-color: none;
 }
-.perfilCont span{
+
+.perfilCont span {
     border-bottom: 1px solid var(--azulOscuro);
 }
+
 /* /////////////// */
 .content {
     margin: 0 auto;
@@ -43,26 +46,29 @@
     height: fit-content;
 }
 
-    .carrousel{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border: 1px solid grey;
-        border-left: none;
-        border-right: none;
-        padding: 2rem;
-    }
-    .carrousel button{
-        height: fit-content;
-    }
-    .ovalo{
-        width: 5rem;
-        height: 10rem;
-        background-color: var(--azulOscuro);
-        border-radius: 10000px;
-        box-shadow: 5px 2px 0 2px blue;
-    }
+.carrousel {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20%;
+    border: 1px solid grey;
+    border-left: none;
+    border-right: none;
+    padding: 2rem;
+}
 
+.carrousel button {
+    height: fit-content;
+}
+
+.ovalo {
+    width: 5rem;
+    height: 10rem;
+    background-color: var(--azulOscuro);
+    border-radius: 10000px;
+    box-shadow: 5px 2px 0 2px rgb(34, 34, 108);
+}
+/* /////////////// */
 .sidebarRight,
 .sidebarLeft {
     text-align: center;
@@ -80,7 +86,7 @@
     align-self: center;
     width: 5rem;
     height: 5rem;
-    background-color: var(--azul);
+    background: var(--degradado);
     padding: 10px;
     border-radius: 100%;
 }
@@ -92,13 +98,15 @@
     left: 0;
     width: 10vw;
 }
-.sidebarLeft img{
+
+.sidebarLeft img {
     width: 2rem;
     height: 2rem;
     padding: 8px;
     border: 1px solid var(--azulOscuro);
     border-radius: 100%;
 }
+
 .sidebarLeft div {
     display: flex;
     flex-direction: column;
@@ -126,24 +134,26 @@
     width: 15rem;
     height: fit-content;
     text-align: center;
+    z-index: 2;
 }
-
+/* /////////////// */
 footer {
     margin: 1rem auto;
     width: 60vw;
 }
 
 @media (max-width: 700px) {
-    .navbar{
+    .navbar {
         flex-direction: column;
         gap: 2rem;
     }
+
     .mainContHome {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .content{
+    .content {
         width: 90vw;
     }
 
@@ -168,16 +178,16 @@ footer {
         transform: none;
     }
 
-    .content{
+    .content {
         text-align: center;
     }
 
-    .carrousel{
+    .carrousel {
         flex-direction: column;
         gap: 1rem;
     }
 
-    footer{
+    footer {
         text-align: center;
     }
 }

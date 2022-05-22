@@ -3,6 +3,7 @@
     --verde: #99C69F;
     --piel: #F0D4A2;
     --azulOscuro: #24249b;
+    --degradado:linear-gradient(324deg, rgba(79,156,158,1) 48%, rgba(153,198,159,1) 73%);
 }
 
 body {
@@ -29,6 +30,6 @@ img {
 button {
     border: none;
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 1000px;
     background-color: var(--verde);
 }

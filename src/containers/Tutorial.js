@@ -12,6 +12,7 @@ const Tutorial = ({ setview }) => {
       setvideo(video + 1)
 
     } else { goHome() }
+    
   }
 
   const goHome = () => {
@@ -30,11 +31,11 @@ const Tutorial = ({ setview }) => {
 
         <section className='progreso'>
           <div className='barraProgreso' style={{ height: `${video * 5}rem` }}></div>
-          <div onClick={() => setvideo(1)} className='bolitaVideo' style={video === 1 ? { backgroundColor: `#99C69F`, padding: '3px' } : { backgroundColor: '' }} >1</div>
-          <div onClick={() => setvideo(2)} className='bolitaVideo ' style={video === 2 ? { backgroundColor: `#99C69F`, padding: '3px' } : { backgroundColor: '' }}>2</div>
-          <div onClick={() => setvideo(3)} className='bolitaVideo ' style={video === 3 ? { backgroundColor: `#99C69F`, padding: '3px' } : { backgroundColor: '' }}>3</div>
-          <div onClick={() => setvideo(4)} className='bolitaVideo' style={video === 4 ? { backgroundColor: `#99C69F`, padding: '3px' } : { backgroundColor: '' }}>4</div>
-          <div onClick={() => setvideo(5)} className='bolitaVideo' style={video === 5 ? { backgroundColor: `#99C69F`, padding: '3px' } : { backgroundColor: '' }}>5</div>
+          <div onClick={() => setvideo(1)} className='bolitaVideo' style={video === 1 ? { backgroundColor: `#99C69F`, padding: '5px' } : { backgroundColor: '' }} >1</div>
+          <div onClick={() => setvideo(2)} className='bolitaVideo ' style={video === 2 ? { backgroundColor: `#99C69F`, padding: '5px' } : { backgroundColor: '' }}>2</div>
+          <div onClick={() => setvideo(3)} className='bolitaVideo ' style={video === 3 ? { backgroundColor: `#99C69F`, padding: '5px' } : { backgroundColor: '' }}>3</div>
+          <div onClick={() => setvideo(4)} className='bolitaVideo' style={video === 4 ? { backgroundColor: `#99C69F`, padding: '5px' } : { backgroundColor: '' }}>4</div>
+          <div onClick={() => setvideo(5)} className='bolitaVideo' style={video === 5 ? { backgroundColor: `#99C69F`, padding: '5px' } : { backgroundColor: '' }}>5</div>
         </section>
 
         <section className='bodyTutorial'>
