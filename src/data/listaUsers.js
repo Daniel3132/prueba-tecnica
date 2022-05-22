@@ -1,1 +1,1 @@
-export const usuarios = ['Pedro Muñoz','Carlos Martinez','Juan Piñeros', 'Miguel Sierra']
+export const usuarios = ['Pedro Muñoz', 'Carlos Martinez', 'Juan Piñeros', 'Miguel Sierra']

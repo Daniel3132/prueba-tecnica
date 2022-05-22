@@ -4,20 +4,20 @@ import play from '../assets/SVG/play.svg'
 
 const Tutorial = ({ setview }) => {
 
+  //estado para saber en que video esta
   const [video, setvideo] = useState(1)
+  //estado para activar y desactivar el modal
   const [modal, setmodal] = useState(false)
 
+  //avanzar video o ir a home
   const nextVideo = () => {
     if (video < 5) {
       setvideo(video + 1)
-
     } else { goHome() }
-    
   }
 
   const goHome = () => {
     setmodal(true)
-
   }
 
   return (
@@ -30,6 +30,7 @@ const Tutorial = ({ setview }) => {
       <div className='main'>
 
         <section className='progreso'>
+          {/* estilos segun el video */}
           <div className='barraProgreso' style={{ height: `${video * 5}rem` }}></div>
           <div onClick={() => setvideo(1)} className='bolitaVideo' style={video === 1 ? { backgroundColor: `#99C69F`, padding: '5px' } : { backgroundColor: '' }} >1</div>
           <div onClick={() => setvideo(2)} className='bolitaVideo ' style={video === 2 ? { backgroundColor: `#99C69F`, padding: '5px' } : { backgroundColor: '' }}>2</div>

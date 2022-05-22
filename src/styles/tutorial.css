@@ -3,7 +3,8 @@
     color: white;
 }
 
-#tutorial h4{
+/* /////// parte izquierda //////// */
+#tutorial h4 {
     margin-top: 2rem;
 }
 
@@ -21,7 +22,8 @@
     align-items: flex-end;
     width: 100%;
 }
-/* /////////////// */
+
+/* /////// barra de progreso //////// */
 .main {
     display: flex;
     width: 100%;
@@ -48,7 +50,8 @@
     bottom: -2rem;
     margin: 2rem 0;
 }
-/* /////////////// */
+
+/* //////// parte derecha /////// */
 .bodyTutorial .logo {
     width: 3rem;
     margin: 1rem;
@@ -86,10 +89,14 @@
 
 .btnCont button {
     margin: 0 2rem;
-    background-color: var(--verde);
-    padding: 8px;
+    padding: 8px 15px;
+    border-radius: 0;
+    background-color: none;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
 }
-/* /////////////// */
+
+/* ////// modal  ///////// */
 .modalContinuar {
     position: absolute;
     margin: auto;
@@ -113,6 +120,7 @@
     margin-right: 7px;
 }
 
+/* ////// responsive ///////// */
 @media (max-width: 700px) {
     #tutorial {
         flex-direction: column;

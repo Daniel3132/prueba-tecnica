@@ -7,10 +7,11 @@ import SidebarRight from '../components/Home/SidebarRight'
 import { contentContext } from '../hooks/useContext'
 
 const Home = () => {
+  //contexto global, vista por defecto del doctor en el body
   const [context, setContext] = useState('doctor')
   return (
     <div id='home'>
-      <contentContext.Provider value={{context, setContext}}>
+      <contentContext.Provider value={{ context, setContext }}>
         <NavBar />
         <div className='mainContHome'>
           <SidebarLeft />

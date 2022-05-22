@@ -1,11 +1,11 @@
 import React from 'react'
 
 const Carousel = () => {
+  //carrousel de boostrap
   return (
-    /* class="carousel slide" */
     <div id="carouselExampleControls" class="carousel " data-bs-ride="carousel">
       <div class="carousel-inner">
-        
+
         <div class="carousel-item active">
           <article className='carrousel'>
             <div>
@@ -15,7 +15,7 @@ const Carousel = () => {
             <div className="ovalo"></div>
           </article>
         </div>
-      
+
         <div class="carousel-item">
           <article className='carrousel'>
             <div>

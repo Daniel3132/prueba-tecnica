@@ -4,7 +4,10 @@ import doc from '../../assets/IMG/Mask Group.png'
 import { contentContext } from '../../hooks/useContext'
 
 const NavBar = () => {
+
+  //cambiar el contexto segun la busqueda
   const { setContext } = useContext(contentContext)
+
   const handleSubmit = (e) => {
     e.preventDefault()
     setContext('busqueda')

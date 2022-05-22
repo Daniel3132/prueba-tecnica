@@ -1,14 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* variables y estilos generales para toda la pagina */
 :root {
     --azul: #4F9C9E;
     --verde: #99C69F;
     --piel: #F0D4A2;
     --azulOscuro: #24249b;
-    --degradado:linear-gradient(324deg, rgba(79,156,158,1) 48%, rgba(153,198,159,1) 73%);
+    --degradado: linear-gradient(324deg, rgba(79, 156, 158, 1) 48%, rgba(153, 198, 159, 1) 73%);
 }
 
 body {
     margin: 0;
     font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 80%, rgb(230, 230, 230) 100%);
+    ;
 }
 
 .link {
@@ -19,6 +25,7 @@ body {
 ul {
     margin: 0 auto 1rem auto;
     width: fit-content;
+    cursor: pointer;
 }
 
 .link,
@@ -29,7 +36,11 @@ img {
 
 button {
     border: none;
-    padding: 8px;
+    padding: 6px;
     border-radius: 1000px;
     background-color: var(--verde);
+}
+
+button:hover {
+    padding: 8px;
 }

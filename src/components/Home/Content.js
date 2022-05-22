@@ -6,15 +6,17 @@ import Carousel from './Carousel'
 const Content = () => {
 
   const { context, setContext } = useContext(contentContext)
+  //abrir o cerrar modal
   const [modal, setmodal] = useState(false)
 
+  //condicional (operador ternario) para cambiar la vista segun el contexto global 
   return (
     <>
       {
         context === 'doctor' ?
           <section className='content'>
             <header>
-              <h1 onClick={() => setmodal(true)} >German Lopez</h1>
+              <h1 onClick={() => setmodal(true)} style={{ cursor: 'pointer' }} >German Lopez</h1>
               <h6>Enfermero</h6>
             </header>
             <div>

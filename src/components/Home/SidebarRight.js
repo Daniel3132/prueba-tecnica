@@ -5,7 +5,10 @@ import premios from '../../assets/SVG/premios.svg'
 import muro from '../../assets/SVG/muro.svg'
 
 const SidebarRight = () => {
+
   const [modal, setmodal] = useState(false)
+
+  //titulo que se va a enviar al modal segun el elegido
   const [titulo, setTitulo] = useState('')
 
   const handleModal = (nombre) => {

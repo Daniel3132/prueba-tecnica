@@ -2,6 +2,7 @@
     color: var(--azulOscuro);
 }
 
+/* /////// navbar //////// */
 .navbar {
     width: 70vw;
     margin: 2rem auto;
@@ -39,7 +40,7 @@
     border-bottom: 1px solid var(--azulOscuro);
 }
 
-/* /////////////// */
+/* /////// body //////// */
 .content {
     margin: 0 auto;
     width: 60vw;
@@ -68,7 +69,8 @@
     border-radius: 10000px;
     box-shadow: 5px 2px 0 2px rgb(34, 34, 108);
 }
-/* /////////////// */
+
+/* /////// sidebar derecho e izquierdo //////// */
 .sidebarRight,
 .sidebarLeft {
     text-align: center;
@@ -136,12 +138,14 @@
     text-align: center;
     z-index: 2;
 }
-/* /////////////// */
+
+/* /////// footer //////// */
 footer {
     margin: 1rem auto;
     width: 60vw;
 }
 
+/* /////// responsive //////// */
 @media (max-width: 700px) {
     .navbar {
         flex-direction: column;
